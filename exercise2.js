@@ -7,17 +7,19 @@ const addTask = (task)=>{
     return myArray.length;
 }
 
+// Lists all elements in array
 const listTask = ()=>{
     
     // Checks if array is empty
     if(myArray.length > 0)
     {
+		// Loops theough array and prints each element
         for(let i = 0; i < myArray.length; i++)
         {
             console.log(myArray[i]);
         }
     }
-    else
+    else // Prints message if the array was empty
     {
         console.log("There are no elements in the array");
     }
